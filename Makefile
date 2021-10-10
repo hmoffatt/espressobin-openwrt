@@ -1,5 +1,4 @@
-VERSION = 19.07.7
-#VERSION = 18.06.5
+VERSION = 19.07.8
 
 URL = https://downloads.openwrt.org/releases/$(VERSION)/targets/mvebu/cortexa53/openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
 DOWNLOAD = openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
