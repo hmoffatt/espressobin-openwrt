@@ -1,4 +1,4 @@
-VERSION = 19.07.9
+VERSION = 19.07.10
 
 URL = https://downloads.openwrt.org/releases/$(VERSION)/targets/mvebu/cortexa53/openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
 DOWNLOAD = openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
@@ -20,7 +20,6 @@ $(DOWNLOAD):
 
 $(DIR)/Makefile: $(DOWNLOAD)
 	tar xf $<
-	sed -i 's,^# SOURCE_DATE_EPOCH:=.*,SOURCE_DATE_EPOCH:=1645044479,g' $(DIR)/include/version.mk
 	touch $@
 
 build-ext4-sdcard.img.gz: Makefile $(DIR)/Makefile
