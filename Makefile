@@ -8,7 +8,7 @@ DIR = openwrt-imagebuilder-${VERSION}-mvebu-cortexa53.Linux-x86_64
 PACKAGES=" \
 	luci luci-app-sqm luci-app-adblock \
 	-dnsmasq -odhcpd-ipv6only dnsmasq-full stubby haveged bind-dig avahi-nodbus-daemon \
-	tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
+	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether"
 
 
