@@ -12,7 +12,7 @@ PACKAGES=" \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether"
 
 
-all: build-ext4-sdcard.img.gz
+all: build-ext4-sdcard-$(VERSION).img.gz
 
 $(DOWNLOAD):
 	wget -O $@.tmp $(URL)
@@ -22,7 +22,7 @@ $(DIR)/Makefile: $(DOWNLOAD)
 	tar xf $<
 	touch $@
 
-build-ext4-sdcard.img.gz: Makefile $(DIR)/Makefile
+build-ext4-sdcard-$(VERSION).img.gz: Makefile $(DIR)/Makefile
 	$(MAKE) -C $(DIR) image \
 		CONFIG_TARGET_ROOTFS_PARTSIZE=256 \
 		PROFILE=globalscale_espressobin \
