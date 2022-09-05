@@ -1,4 +1,4 @@
-VERSION = 19.07.10
+VERSION = 21.02.3
 
 URL = https://downloads.openwrt.org/releases/$(VERSION)/targets/mvebu/cortexa53/openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
 DOWNLOAD = openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
@@ -8,7 +8,7 @@ DIR = openwrt-imagebuilder-${VERSION}-mvebu-cortexa53.Linux-x86_64
 PACKAGES=" \
 	luci luci-app-sqm luci-app-adblock \
 	-dnsmasq -odhcpd-ipv6only dnsmasq-full stubby haveged bind-dig avahi-nodbus-daemon \
-	ip-bridge tinc tcpdump ca-certificates ca-bundle libustream-openssl iperf3 mtr emailrelay nmap adblock \
+	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether"
 
 
