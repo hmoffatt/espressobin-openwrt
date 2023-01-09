@@ -1,4 +1,4 @@
-VERSION = 22.03.2
+VERSION = 22.03.3
 
 URL = https://downloads.openwrt.org/releases/$(VERSION)/targets/mvebu/cortexa53/openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
 DOWNLOAD = openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
@@ -7,10 +7,10 @@ DIR = openwrt-imagebuilder-${VERSION}-mvebu-cortexa53.Linux-x86_64
 
 PACKAGES=" \
 	luci luci-app-sqm luci-app-adblock \
-	-dnsmasq -odhcpd-ipv6only dnsmasq-full stubby haveged bind-dig avahi-nodbus-daemon \
+	-dnsmasq -odhcpd-ipv6only dnsmasq-full stubby haveged avahi-nodbus-daemon \
 	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether"
-
+# missing: bind-dig
 
 all: build-ext4-sdcard-$(VERSION).img.gz
 
