@@ -10,9 +10,9 @@ PACKAGES=" \
 	-dnsmasq -odhcpd-ipv6only dnsmasq-full stubby haveged avahi-nodbus-daemon \
 	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether \
-	wireguard-tools luci-app-wireguard \
+	wireguard-tools luci-app-wireguard qrencode \
+	bind-dig \
 "
-# missing: bind-dig
 
 all: build-ext4-sdcard-$(VERSION).img.gz
 
