@@ -1,4 +1,4 @@
-VERSION = 22.03.5
+VERSION = 23.05.2
 
 URL = https://downloads.openwrt.org/releases/$(VERSION)/targets/mvebu/cortexa53/openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
 DOWNLOAD = openwrt-imagebuilder-$(VERSION)-mvebu-cortexa53.Linux-x86_64.tar.xz
@@ -11,7 +11,7 @@ PACKAGES=" \
 	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether \
 	wireguard-tools luci-app-wireguard qrencode \
-	bind-dig \
+	bind-dig speedtestpp irqbalance \
 "
 
 all: build-ext4-sdcard-$(VERSION).img.gz
