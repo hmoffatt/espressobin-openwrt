@@ -11,7 +11,7 @@ PACKAGES=" \
 	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether \
 	wireguard-tools luci-app-wireguard qrencode \
-	bind-dig speedtestpp irqbalance \
+	bind-dig speedtestpp irqbalance nebula nebula-service \
 "
 
 all: build-ext4-sdcard-$(VERSION).img.gz
