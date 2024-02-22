@@ -8,10 +8,10 @@ DIR = openwrt-imagebuilder-${VERSION}-mvebu-cortexa53.Linux-x86_64
 PACKAGES=" \
 	luci luci-app-sqm luci-app-adblock \
 	-dnsmasq -odhcpd-ipv6only dnsmasq-full stubby haveged avahi-nodbus-daemon \
-	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock \
+	ip-bridge tinc tcpdump ca-certificates ca-bundle iperf3 mtr emailrelay nmap adblock openssh-sftp-server \
 	usbutils usb-modeswitch kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether \
 	wireguard-tools luci-app-wireguard qrencode \
-	bind-dig speedtestpp irqbalance nebula nebula-service \
+	bind-dig speedtestpp irqbalance nebula nebula-service python3 \
 "
 
 all: build-ext4-sdcard-$(VERSION).img.gz
